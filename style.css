@@ -8,6 +8,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
 <style>
+header{
+ width: 100%;
+  height:100%;
+  background: none;
+}
 img{
 width: 100%;
 }
