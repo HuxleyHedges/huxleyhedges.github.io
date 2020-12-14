@@ -46,6 +46,7 @@ a:active{
  border: none;
  text-align: center;
  text-decoration: none;
+ dispaly: inline-block;
 }
 h1{
 font-size: 3.5em;
