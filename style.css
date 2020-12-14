@@ -41,6 +41,11 @@ a:hover{
 a:active{
  text-deccation: none;
 }
+.button{
+ background-color: none;
+ border: none;
+ text-align: center;
+}
 h1{
 font-size: 3.5em;
 color: #1e8017;
