@@ -41,7 +41,7 @@ a:hover{
 a:active{
  text-deccation: none;
 }
-.button{
+button{
  background-color: none;
  border: none;
  text-align: center;
