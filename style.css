@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
- 
+ @media only screen (max-device-width: 100%){
+#content {
+ float: none;
+ width: 100%;
+}
+#navigation {
+ float: none;
+ width: auto;
+}
+}
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
