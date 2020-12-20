@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
- @media only screen (max-device-width: 1284px){
+/* For mobile phones: */
+[class*="col-"]{
+ width: 100%;
+}
+ @media only screen and (max-width: 1284px){
 #content {
  float: none;
  width: 100%;
