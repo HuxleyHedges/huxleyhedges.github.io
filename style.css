@@ -106,9 +106,6 @@ padding-right: 2%;
            position: relative;
            margin: auto;
            }
-           .mySlides {
-           display: none;
-           }
            .prev, .next {
            cursor: pointer;
            position: absolute;
