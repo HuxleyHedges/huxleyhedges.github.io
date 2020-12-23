@@ -20,8 +20,8 @@
   <body>
     <h1>Frequently Asked Questions</h1>
     </br></br>
-<button onlick="myFunction1()" type="button" class="button button2"><h3>Why lay hedges?</h3></button>
-  <div id="myDIV1" style="display:none">
+<button onlick="myFunction()" type="button" class="button button2"><h3>Why lay hedges?</h3></button>
+  <div id="myDIV" style="display:none">
 <p>Passers-by often ask ‘what’ and ‘why.’ Hedgelaying is termed a traditional skill. 
   The three main reasons for laying a hedge are: to produce a stock proof barrier, to rejuvenate the hedge from its base and to enhance its wildlife value.</p>
 </div>
@@ -63,9 +63,9 @@
 <p>Midland /Bullock style is what we, at Huxley Hedges, choose. 
   It creates a thick hedge designed to be stock proof; cattle would be held on the far side of the hedge which is kept brashy (rather than the neat appearance of the near side).</p>
 <script>
-     function myFunction1() {
+     function myFunction() {
        var x =
-           document.getElementById("myDIV1");
+           document.getElementById("myDIV");
        if (x.style.display === "none") {
          x.style.display = "block";
        } else {
