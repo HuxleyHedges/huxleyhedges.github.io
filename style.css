@@ -68,7 +68,7 @@ a:active{
  display: inline-block;
  background: none;
  width: 100%;
- float: center;
+ float: left;
 }
   .button2 {
       background-color: #ffffff;
