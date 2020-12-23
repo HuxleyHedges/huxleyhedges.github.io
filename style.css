@@ -70,6 +70,18 @@ a:active{
  width: 100%;
  float: center;
 }
+  .button2 {
+      background-color: #ffffff;
+      border: none;
+      color: white;
+      text-align: center;
+      text-deoration: none;
+      display: inline-block;
+      font-size: 4em
+      margin: none;
+      cursor: pointer;
+      width: 100%;
+    }
 h1{
 font-size: 3.5em;
 color: #1e8017;
