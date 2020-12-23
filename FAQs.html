@@ -46,23 +46,25 @@
   The skill of laying older hedges requires more advanced techniques, including root laying and some coppicing and this level of difficulty is reflected in the higher price per metre.</p>
 </div>
 
-<h3>How much will it cost to lay my hedge?</h3>
-</br>
+<button onclick="myFunction5()" type="button" class="button button2"><h3>How much will it cost to lay my hedge?</h3></button>
+<div id="myDIV5" style="display:none">
 <p>This will vary depending on the age of hedge and hence the level of difficulty.  
   However, the cost of materials, stakes and binders, remains the same. Each metre of hedge will require 2.5 stakes and 2.5 bindings at a cost of 120p-160p per piece. 
   As for labour cost, this can be anywhere between £7-£15/m.</p>
-</br>
-<h3>Will the laid stem carry on living?</h3>
-</br>
+</div>
+
+<button onclick="myFunction6" type="button" class="button button 2><h3>Will the laid stem carry on living?</h3></button>
+<div id="myDIV6 style="display:none">
 <p>Yes! The stem (pleacher) is still attached at the base.  
   With the inner bark, the bast and cambium layers still intact then water and nutrients will continue to flow up the stem, keeping it alive. 
   Also, during the first growing season, you will notice regrowth at the base.</p>
-</br>
-<h3>What is Midland Style?</h3>
-</br>
+  </div>
+<button onclick="myFunction7" type="button" class="button button2"><h3>What is Midland Style?</h3></button>
+<div id="myDIV7" stye="display:none">
 <p>Midland /Bullock style is what we, at Huxley Hedges, choose. 
   It creates a thick hedge designed to be stock proof; cattle would be held on the far side of the hedge which is kept brashy (rather than the neat appearance of the near side).</p>
-<script>
+</div>
+  <script>
      function myFunction() {
        var x =
            document.getElementById("myDIV");
@@ -93,6 +95,33 @@
    function myFunction4() {
        var x =
            document.getElementById("myDIV4");
+       if (x.style.display === "none") {
+         x.style.display = "block";
+       } else {
+         x.style.display = "none";
+       }
+     }
+     function myFunction5() {
+       var x =
+           document.getElementById("myDIV5");
+       if (x.style.display === "none") {
+         x.style.display = "block";
+       } else {
+         x.style.display = "none";
+       }
+     }
+     function myFunction6() {
+       var x =
+           document.getElementById("myDIV6");
+       if (x.style.display === "none") {
+         x.style.display = "block";
+       } else {
+         x.style.display = "none";
+       }
+     }
+     function myFunction7() {
+       var x =
+           document.getElementById("myDIV7");
        if (x.style.display === "none") {
          x.style.display = "block";
        } else {
