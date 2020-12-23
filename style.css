@@ -62,6 +62,7 @@ a:active{
 }
 .button{
  background-color: none;
+ padding: 10px;
  border: none;
  text-align: center;
  text-decoration: none;
