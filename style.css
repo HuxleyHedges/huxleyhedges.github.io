@@ -66,6 +66,9 @@ a:active{
  text-align: center;
  text-decoration: none;
  display: inline-block;
+ background: none;
+ width: 100%;
+ float: center;
 }
 h1{
 font-size: 3.5em;
