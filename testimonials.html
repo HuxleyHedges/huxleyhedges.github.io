@@ -58,6 +58,16 @@
 	}
 	</style>
 	<script>
+		/*click to reveal text*/
+     function myFunction() {
+       var x =
+           document.getElementById("myDIV");
+       if (x.style.display === "none") {
+         x.style.display = "block";
+       } else {
+         x.style.display = "none";
+       }
+     }
 		function initComparisons() {
 			var x, i;
 			x = document.getElementByClassName("img-comp-overlay");
@@ -155,18 +165,5 @@ working sometimes through very heavy rain. A true mixture of fieldworker and art
 </tr>
 </table>
 </div>
-
-   <script>
-     /*click to reveal text*/
-     function myFunction() {
-       var x =
-           document.getElementById("myDIV");
-       if (x.style.display === "none") {
-         x.style.display = "block";
-       } else {
-         x.style.display = "none";
-       }
-     }
-   </script>
  </body>
  </html>
