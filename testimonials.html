@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@800&family=Merriweather+Sans&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <h1><a href="http://huxleycrafts.com/">
     Huxley Hedges
     </a>
@@ -22,6 +23,10 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+  p { 
+       text-align: center;
+       border: none;
+     }
 * {box-sizing: border-box;}
 
 .img-comp-container {
@@ -106,23 +111,20 @@ function initComparisons() {
 }
 </script>
  </head>
-<link rel="stylesheet" type="text/css" href="style.css">
  <body>
-   <style>
-     p { 
-       text-align: center;
-       border: none;
-     }
-   </style>
    </br>
   <p>Click through the names below to read about our previous clients' views on our work</p>
    </br></br>
 <button onclick="myFunction()" class="button button2"><h1><b>Ronan's Hedge</b></h1></button>
    
    <div id="myDIV" style="display:none">
-     <table>
+     <table style="width: 100%;>
+<colgroup>
+<col span="1" style="width: 50%;">
+<col span="1" style="width: 50%;">
+</colgroup>
        <tr>
-         <th>
+         <th colspan="1">
            <p>We moved into our South Norfolk home in 1978. The plot is roughly rectangular, about 30y x 100y, with a perimeter of some 260y. 
      Over the years we have let hedges emerge at the border, where previously there was a mix of fencing and very old bits of hedge and brambles. 
      By 2015 the result was a very poor quality hedge boundary, of very mixed age and type, full of bramble and old fencing remains, and totally out of control. 
@@ -138,7 +140,7 @@ Over some 3-4 years Alison has completely restored our 260 yards of boundary hed
 working sometimes through very heavy rain. A true mixture of fieldworker and artist.</p>
    </div>
 </th>
-<th>
+<th colspan="1">
   <div class="img-comp-container">
     <div class="img-comp-img">
   <img src="https://user-images.githubusercontent.com/75944088/103456461-7db6ee00-4cee-11eb-8dba-b164e4e8398d.jpg">
