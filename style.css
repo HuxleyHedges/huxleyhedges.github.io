@@ -147,7 +147,9 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-  color: #1e8017;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: white;
+  background-color: black; 
   font-size: 30px;
   padding: 8px 12px;
   position: absolute;
