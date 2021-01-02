@@ -49,12 +49,21 @@ function myFunction() {
          x.style.display = "none";
        }
      }
+	function myFunction2() {
+       var x =
+           document.getElementById("myDIV2");
+       if (x.style.display === "none") {
+         x.style.display = "block";
+       } else {
+         x.style.display = "none";
+       }
+     }
 	</script>					  
  </head>
 
  <body>
    </br>
-  <p>Click through the names below to read about our previous clients' views on our work</p>
+  <p>Click through the names below to read about our previous clients' experience</p>
    </br></br>
 <button onclick="myFunction()" class="button button2"><h1><b>Ronan's Hedge</b></h1></button>
    
@@ -90,7 +99,7 @@ working sometimes through very heavy rain. A true mixture of fieldworker and art
 </tr>
 </table>
 </div>
-<button onclick="myFunction1()" class="button button2"><h1><b>Sonia</b></h1></button>
+<button onclick="myFunction1()" class="button button2"><h1><b>Sonia's Experience Day</b></h1></button>
 <div id="myDIV1" style="display:none">
      <table style="width: 100%;>
 <colgroup>
@@ -104,6 +113,24 @@ The day helped with my mental wellbeing. Being out in the fresh air, I forgot ev
 		 </p>
 	       </th>
 	       <th>
+		       <img src="https://user-images.githubusercontent.com/75944088/103467971-51ca5580-4d4c-11eb-9265-6107213cd146.jpg">
+	       </th>
+	     </tr>
+	   </table>
+	   <button onclick="myFunction2()" class="button button2"><h1><b>James' Experience Day</b></h1></button>
+<div id="myDIV2" style="display:none">
+     <table style="width: 100%;>
+<colgroup>
+<col span="1" style="width: 50%;">
+<col span="1" style="width: 50%;">
+</colgroup>
+       <tr>
+         <th colspan="1">
+		 <p>Alison was a knowledgeable tutor with a passion for nature and the environment and this came across during our session together. Alison took the time to show and explain how a hedge is properly laid and answer any questions. She was happy to let me have a go and help me cut the trees correctly and have a hands on experience. I am currently enrolled on a Conservation Studies course and it was hugely beneficial to put the theory of hedgerow laying into practice. If you are interested in laying a hedge correctly, or want to do something different and get your hands dirty, I can recommend you and a friend have a day with Alison.
+		 </p>
+	       </th>
+	       <th>
+		       <img src="https://user-images.githubusercontent.com/75944088/103467993-af5ea200-4d4c-11eb-8a6a-985c06e9fecf.jpg">
 	       </th>
 	     </tr>
 	   </table>
