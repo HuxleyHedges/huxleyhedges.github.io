@@ -19,6 +19,92 @@
   <button type="button" class="button"><a href="http://huxleycrafts.com/courses">Courses and Training</a></button>
   <button type="button" class="button"><a href="http://huxleycrafts.com/FAQs">FAQS</a></button>
   </br>
+  
+ /*slide to reveal img*/
+  <style>
+    *{box-sizing: border-box;}
+    
+    .img-comp-container{
+      position: relative;
+      height: auto;
+    }
+    
+    .img-comp-img{
+      position: absolute;
+      width: auto;
+      height: auto;
+      overflow:hidden;
+    }
+    
+    .img-comp-img img{
+      display:block;
+      vertical-align:middle;
+    }
+    
+    img-comp-slider{
+      position: absolute;
+      z-index:9;
+      cursor: ew-resize;
+      width: 40px;
+      height: 40px;
+      background-color: #2196f3;
+      opacity: 0.7;
+      border-radius: 50%;
+    }
+  </style>
+  <script>
+     /*slide to reveal image*/
+     function initComparisons(){
+       var x, i;
+       x = document.getElementsByClassName("img-comp-overlay");
+       for (i = 0; i < x.length; i++) {
+         compareImages(x[i]);
+       }
+       function compareImages(img){
+         var slider, img, clicked = 0, w, h;
+         w = img.offsetWidth;
+         h = img.offsetHeight;
+         img.style.width = (w / 2) + "px";
+         slider.setAttribute("class", "img-comp-slider");
+         img.parentElement.insertBefore(slider, img);
+         slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+         slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+         slider.addEventListener("mousedown", slideReady);
+         window.addEventListener("mouseup", slideFinish);
+         slider.addEventListener("touchstart", slideReady);
+         window.addEventListener("touchend", slideFinished);
+         function slideReady(e){
+           e.preventDefault();
+           clicked = 1;
+           window.addEventListener("mousemove", slideMove);
+           window.addEventListener("touchmove", slideMove);
+         }
+         function slideFinish(){
+           clicked = 0;
+         }
+         function slideMove(e){
+           var pos;
+           if (clicked ==0) return false;
+           pos = getCursorPos(e)
+           if (pos < 0) pos = 0;
+           if (pos > w) pos = w;
+           slide(pos);
+         }
+         function get CursorPos(e){
+           var a, x = 0;
+           e = e || window.event;
+           a = img.getBoundingClientRect();
+           x = e.pageX - a.left;
+           x = x - window.pageXOffset;
+           return x;
+         }
+         function slide(x){
+           img.style.width = x + "px";
+           slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+         }
+       }
+     }
+  </script>
  </head>
 <link rel="stylesheet" type="text/css" href="style.css">
  <body>
@@ -53,14 +139,21 @@ working sometimes through very heavy rain. A true mixture of fieldworker and art
    </div>
 </th>
 <th>
+  <div class="img-comp-container">
+    <div class="img-comp-img">
   <img src="https://user-images.githubusercontent.com/75944088/103456461-7db6ee00-4cee-11eb-8dba-b164e4e8398d.jpg">
+      <div class="text">Before</div>
+    </div>
+    <div class="img-comp-img img-comp-overlay">
   <img src="https://user-images.githubusercontent.com/75944088/103456463-81e30b80-4cee-11eb-863f-4612b3079477.jpg">
+      <div class="text">After</div>
+    </div>
 </th>
 </tr>
 </table>
 
-/*click to reveal text*/
    <script>
+     /*click to reveal text*/
      function myFunction() {
        var x =
            document.getElementById("myDIV");
@@ -70,6 +163,8 @@ working sometimes through very heavy rain. A true mixture of fieldworker and art
          x.style.display = "none";
        }
      }
+     
+    initComparisons();
    </script>
  </body>
  </html>
