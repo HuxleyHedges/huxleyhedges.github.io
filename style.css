@@ -106,8 +106,7 @@ padding-right: 2%;
 }
 
 ul {
- font-size: 1.5em;
- font-family: 'Yanone Kaffeesatz', sans-serif;
+ font: 1.5em'Yanone Kaffeesatz', sans-serif;
 }
 
 * {box-sizing: border-box}
