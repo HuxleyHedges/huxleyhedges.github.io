@@ -72,7 +72,7 @@ a:active{
       width: 100%;
     }
 h1{
- font-family: "Big Shoulders Inline Text", cursive !important;
+ font-family: "Big Shoulders Inline Text", cursive;
 font-size: 3.5em;
 color: #1e8017;
 text-align: center;
@@ -120,6 +120,7 @@ img {vertical-align: middle;}
 
 /* Next & previous buttons */
 .prev, .next {
+ font-family: "Big Shoulders Inline Text", cursive;
   cursor: pointer;
   position: absolute;
   top: 50%;
