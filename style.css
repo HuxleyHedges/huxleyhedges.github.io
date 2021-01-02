@@ -148,8 +148,8 @@ img {vertical-align: middle;}
 /* Caption text */
 .text {
   font-family: 'Merriweather Sans', sans-serif;
-  color: white;
-  background-color: black; 
+  color: #ffffff;
+  background-color: rgba(0,0,0,0.8); 
   font-size: 30px;
   padding: 8px 12px;
   position: absolute;
