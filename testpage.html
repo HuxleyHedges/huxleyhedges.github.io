@@ -77,6 +77,17 @@
 }
 </style>
 <script>
+	/*click to reveal text*/
+	function myFunction() {
+       var x =
+           document.getElementById("myDIV");
+       if (x.style.display === "none") {
+         x.style.display = "block";
+       } else {
+         x.style.display = "none";
+       }
+     }
+	/*image slider*/
 function initComparisons() {
   var x, i;
   /*find all elements with an "overlay" class:*/
@@ -193,10 +204,6 @@ working sometimes through very heavy rain. A true mixture of fieldworker and art
 </tr>
 </table>
 </div>
-<h1>Compare Two Images</h1>
-
-<p>Click and slide the blue slider to compare two images:</p>
-
 <div class="img-comp-container">
   <div class="img-comp-img">
     <img src="https://user-images.githubusercontent.com/75944088/103456463-81e30b80-4cee-11eb-863f-4612b3079477.jpg" width="300" height="200">
