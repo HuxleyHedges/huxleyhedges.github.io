@@ -3,16 +3,27 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-  .text {
+  .text1 {
   font-family: 'Merriweather Sans', sans-serif;
   color: #ffffff;
   background-color: rgba(0,0,0,0.8); 
-  font-size: 30px;
+  font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
-  text-align: center;
+  text-align: left;
+  }
+   .text2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #ffffff;
+  background-color: rgba(0,0,0,0.8); 
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: right;
   }
   
 * {box-sizing: border-box;}
@@ -134,11 +145,11 @@ function initComparisons() {
 <div class="img-comp-container">
   <div class="img-comp-img">
     <img src="https://user-images.githubusercontent.com/75944088/103456463-81e30b80-4cee-11eb-863f-4612b3079477.jpg" width="300" height="200">
-    <div class="text">After</div>
+    <div class="text2">After</div>
   </div>
   <div class="img-comp-img img-comp-overlay">
     <img src="https://user-images.githubusercontent.com/75944088/103456461-7db6ee00-4cee-11eb-8dba-b164e4e8398d.jpg" width="300" height="200">
-    <div class="text">Before</div>
+    <div class="text1">Before</div>
   </div>
 </div>
 
